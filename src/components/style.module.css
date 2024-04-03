@@ -1,0 +1,708 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ------------------------------------------------key frames for animation------------------------------------- */
+@keyframes slideTop {
+    0%{
+        transform:translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideBottom {
+    0%{
+        transform:translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideRight {
+    0%{
+        transform:translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideLeft {
+    0%{
+        transform:translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+    
+}
+/* ----------------------------------------------------------nav-------------------------------------------------------------------- */
+#nav{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+    z-index: 999;
+    padding: 0 2rem;
+    /* border: 2px solid black; */
+}
+
+#nav>h1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    animation: slideRight 1s ease forwards;
+    opacity: 0;
+}
+
+.pcmenu{
+    height: 100%;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   /* border: 2px solid yellow; */
+}
+.pcmenu>li{
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: calc(.2s);
+    opacity: 0;
+}
+.pcmenu>li>a{
+    /* color: white; */
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+.pcmenu>li>a::after{
+   content: "";
+   width: 0;
+   height: 3px;
+   background-color: aqua;
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   transition: 0.5s;
+}
+.pcmenu>li>a:hover::after{
+      width: 100%;
+}
+#nav>button{
+    display: none;
+   
+}
+.mobilemenu{
+    display: none;
+}
+@media screen and (max-width:780px) {
+    #nav>h1{
+        font-size: 35px;
+    }
+    #nav>button{
+        display:block;
+    }
+    .pcmenu{
+        display: none;
+    }
+    .mobilemenu{
+        display:block;
+        height: auto;
+        position: absolute;
+        list-style: none;
+        background-color:aqua;
+        color: white;
+        right: 0;
+        top:10vh;
+        transition: all 0.5s ease-out;
+        width: 50%;
+    }
+    .mobilemenu>li{
+        fill: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .mobilemenu>li:hover{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+}
+
+
+
+
+/* --------------------------------------------------------home---------------------------------------------------------------------- */
+#home{
+    height: 100vh;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home>div{
+    height: 100%;
+    width: 50%;
+    padding: 0 2rem;
+}
+#home>#imgblock{
+    height: 100%;
+    width: 40%;
+}
+#home>div>.h{
+    
+    animation: slideBottom 1s ease forwards;    
+    opacity: 0;
+}
+#home>div>.name{
+    font-size: 45px;
+    animation: slideLeft 1s ease forwards;
+    opacity: 0;
+}
+#home>div>.p{
+    font-size: 15px;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .5s;
+    opacity: 0;
+}
+#home>div>button{
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.img{
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px aqua;
+    background-color: rgb(12, 225, 225);
+    animation: slideTop 1.5s ease forwards;
+    animation-delay: .5s;
+    opacity: 0;
+}
+.img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 40px aqua;
+}
+@media screen and (max-width:760px) {
+     #home{
+        height: 130vh;
+        width: 100%;
+        display: flex;
+        flex-direction:column-reverse; 
+     }
+     #home>#imgblock{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     #home>#conblock{
+        height: 50%;
+        width: 100%;
+     }
+     .h{
+        font-size: 20px;
+     }
+     .name{
+        font-size: 25px;
+    }
+    .p{
+        font-size:12px ;
+     }
+     .img{
+        height: 65%;
+        width: 65%;
+        margin-top: 20px;
+     }
+    
+}
+
+/* ---------------------------------------------------------About--------------------------------------------------------------------- */
+#about{
+    height: 90vh;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about>#Aimgblock{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about>#Aimgblock>.img{
+    height: 70%;
+    width: 55%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px aqua;
+    background-color: rgb(12, 225, 225);
+}
+
+#about>#Aimgblock>.img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 40px aqua;
+}
+#about>#conblock{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Atitle{
+    font-size: 45px;
+    font-weight: bold;
+}
+.Asubtitle{
+    font-size: 35px;
+    font-weight: bold;
+}
+.Apara{
+    font-size: 14px;
+}
+@media screen and (max-width:760px){
+    #about{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+    }
+    /* #Aimgblock{
+        display: none;
+    }
+    #Aimgblock>.img{
+        display: none;
+    } */
+    #about>#Aimgblock{
+        height: 40%;
+        width: 100%;
+    }
+    #about>#Aimgblock>.img{
+        height: 20%;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    #about>#conblock{
+        height:auto;
+        width: 100%;
+    }
+   
+    .Atitle{
+        font-size: 30px;
+    }
+    .Asubtitle{
+        font-size: 20px;
+    }
+    .Apara{
+        height: auto;
+        font-size: 12px;
+    }
+   
+    
+}
+
+/* -----------------------------------------------------------skills--------------------------------------------------------------------- */
+#skills{
+    height: 100vh;
+    width: 100%;
+}
+#skills>h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+#main{
+    height: 75%;
+    width: 90%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#tskills{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#tskills>div{
+    height: 8%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#tskills>div>h1{
+    font-size: 20px;
+}
+#tskills>div>span>div{
+    height: 10px;
+    width: 100%;
+}
+
+#html>span>div>div{
+    height: 100%;
+    background-color: aqua;
+    animation: htmlpercentage 2s ease forwards;  
+}
+@keyframes htmlpercentage {
+    0%{width:0%;}
+    100%{width: 84%;}
+}
+#css>span>div>div{
+    height: 100%;
+    background-color: aqua;
+    animation: csspercentage 2s ease forwards;  
+}
+@keyframes csspercentage {
+    0%{width:0%;}
+    100%{width: 80%;}
+}
+#js>span>div>div{
+    height: 100%;
+    background-color: aqua;
+    animation: jspercentage 2s ease forwards;  
+}
+@keyframes jspercentage {
+    0%{width:0%;}
+    100%{width: 75%;}
+}
+#react>span>div>div{
+    height: 100%;
+    background-color: aqua;
+    animation: reactpercentage 2s ease forwards;  
+}
+@keyframes reactpercentage {
+    0%{width:0%;}
+    100%{width: 72%;}
+}
+#node>span>div>div{
+    height: 100%;
+    background-color: aqua;
+    animation: nodepercentage 2s ease forwards;  
+}
+@keyframes nodepercentage {
+    0%{width:0%;}
+    100%{width: 70%;}
+}
+#mongodb>span>div>div{
+    height: 100%;
+    background-color: aqua;
+    animation: mongodbpercentage 2s ease forwards;  
+}
+@keyframes mongodbpercentage {
+    0%{width:0%;}
+    100%{width: 60%;}
+}
+#sql>span>div>div{
+    height: 100%;
+    background-color: aqua;
+    animation: sqlpercentage 2s ease forwards;  
+}
+@keyframes sqlpercentage {
+    0%{width:0%;}
+    100%{width: 80%;}
+}
+#pskills{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#pskills>div{
+    height:33%;
+    width:90%;
+    display: flex;
+    margin-top: 20px;
+}
+#pskills>div>div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#pskills>div>div>h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.outerlayer{
+    height: 75%;
+    width: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outerlayer>div{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ssubtitle{
+    width: 80%;
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}
+/* --------------- */
+@media screen and (max-width:700px){
+    #skills{
+        height: 150vh;
+        width: 100%;
+    }
+    #skills>h1{
+      font-size: 30px;
+    }
+    #main{  
+      height:85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .Ssubtitle{
+        font-size: 20px;
+    }
+    #tskills{
+        height: 47%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #tskills>div{
+        height: 5%;
+        width: 90%;
+    }
+    #tskills>div>h1{
+        font-size: 15px;
+    }
+    #tskills>div>span>div{
+        height: 6px;
+        width: 100%;
+    }
+    #pskills{
+        height: 47%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #pskills>div{
+        height: 42%;
+        width: 90%;
+        /* margin-top: 10px; */
+    }
+    #pskills>div>div{
+        height: 100%;
+        width:50%;
+    }
+    #pskills>div>div>h1{
+        font-size: 15px;
+    }
+    .outerlayer{
+        height: 70%;
+        width: 70%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* -----------------------------------------------------------project------------------------------------------------------------------- */
+#project{
+    height: auto;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#project>h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+#mainblock{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#mainblock>div{
+    height: 60vh;
+    width: 23%;
+    border-radius:10px ;
+    overflow: hidden;
+}
+#mainblock>div>div{
+    height: 100%;
+    width: 100%;
+}
+#mainblock>div>div>img{
+    height: 100%;
+    width: 100%;
+}
+
+#mainblock>div:hover .hovercontent{
+    transition: 0.5s;
+    transform: translateY(-60vh);
+}
+#mainblock>div>.hovercontent{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background:linear-gradient(rgba(0,0,0,0.3),aqua)
+}
+@media screen and (max-width:700px){
+    #project>h1{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #mainblock{
+        height: auto;
+        width: 100%;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #mainblock>div{
+        height:60vh;
+        width: 80%;
+        overflow: hidden;
+
+    }
+}
+/* ---------------------------------------------------------contact--------------------------------------------------------------------- */
+#contact{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact>div{
+    height: 10%;
+    width: 100%;
+}
+#contact>div>h1{
+    font-size: 17px;
+}
+#cmainblock{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cmainblock>div{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    padding: 0 2rem;
+}
+#cmainblock>div>.ctitle{
+    font-size: 45px;
+}
+#cmainblock>div>.csubtitle{
+    font-size: 18px;
+}
+#cmainblock>form{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+@media screen and (max-width:760px){
+    #contact{
+        height: 140vh;
+        width: 100%;
+    }
+    #cmainblock{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #cmainblock>div{
+        height:50%;
+        width: 100%;
+    }
+    #cmainblock>div>.ctitle{
+        font-size: 30px;
+    }
+    #cmainblock>div>.csubtitle{
+        font-size: 13px;
+    }
+    #cmainblock>form{
+        height: 50%;
+        width: 100%;
+    }
+    #contact>div{
+        height: 10vh;
+        width: 100%;
+    }
+    #contact>div>h1{
+        font-size: 11px;
+    }
+}
