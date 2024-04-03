@@ -76,7 +76,7 @@ const Contact=()=>{
         <section id={style.contact} style={{backgroundColor:theme?"white":"black",color:theme?"black":"white"}}>
             <article id={style.cmainblock} >
                 <div   data-aos="fade-up">
-                    <h1 className={style.ctitle} style={{marginTop:"70px"}}>Contact <span style={{color:"aqua"}}>Me</span></h1>
+                    <h1 className={style.ctitle} style={{marginTop:"110px"}}>Contact <span style={{color:"aqua"}}>Me</span></h1>
                     <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center",marginTop:"25px"}}><EmailIcon sx={{fill:"aqua"}}/><span style={{marginLeft:"5%"}}>Shanmugam070702@gmail.com</span></h1>
                     <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center",marginTop:"15px"}}><PhoneIcon sx={{fill:"aqua"}}/><span style={{marginLeft:"5%"}}>9361813275</span></h1>
                     <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center",marginTop:"15px"}}><LinkedInIcon sx={{fill:"aqua"}}/><a href="https://www.linkedin.com/in/shanmugam-n-3a737328a" target="_blank" style={{marginLeft:"5%",color:"currentcolor"}}>linkedin.com/in/shanmugam-n-3a737328a</a></h1>

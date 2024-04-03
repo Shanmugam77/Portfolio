@@ -18,12 +18,12 @@ const Nav=()=>{
                 <h1> <span style={{color:"aqua"}}>D</span>EVELOPE <span style={{color:"aqua"}}>R</span></h1>
             
            
-                <ul className={ismobile?style.mobilemenu:style.pcmenu} style={{color:theme?"black":"white"}} onClick={()=>{setIsmobile(false)}}>
-                    <li><Link to={style.home}>HOME</Link></li>
-                    <li><Link to={style.about}>ABOUT</Link></li>
-                    <li><Link to={style.skills}>SKILLS</Link></li>
-                    <li><Link to={style.project}>PROJECT</Link></li>
-                    <li><Link to={style.contact}>CONTACT</Link></li>
+                <ul className={ismobile?style.mobilemenu:style.pcmenu} style={{backgroundColor:theme?"white":"black",color:theme?"black":"white"}} >
+                    <li><Link to={style.home}> <li>HOME</li></Link></li>
+                    <li><Link to={style.about}><li>ABOUT</li></Link></li>
+                    <li><Link to={style.skills}><li>SKILLS</li></Link></li>
+                    <li><Link to={style.project}><li>PROJECT</li></Link></li>
+                    <li><Link to={style.contact}><li>CONTACT</li></Link></li>
                     <li onClick={toggletheme}>  {theme?<DarkModeIcon sx={{fill:"black",marginTop:"4px"}}/>:<LightModeIcon sx={{fill:"white",marginTop:"4px"}}/>}</li>
                 </ul>
 
