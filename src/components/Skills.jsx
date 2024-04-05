@@ -104,7 +104,7 @@ const Skills=()=>{
                     <h1 className={style.Ssubtitle} data-aos="fade-right" >Technical Skills</h1>
                     
                     <div id={style.html}>
-                        <h1 style={{display:"flex",alignItems:"center"}}><img src={htmlimg} height="30px"  width="30px" alt="" />  HTML</h1>
+                        <h1 style={{display:"flex",alignItems:"center"}}><img src={htmlimg} height="25px"  width="25px" alt="" />  HTML</h1>
                         <span style={{display:"flex",alignItems:"center"}}>
                             <div style={{border:theme?"1px solid black":"1px solid white",borderRadius:"5px",overflow:"hidden"}}>
                                 <div></div>
@@ -114,7 +114,7 @@ const Skills=()=>{
                         
                     </div>
                     <div id={style.css} >
-                        <h1 style={{display:"flex",alignItems:"center"}}><img src={cssimg} height="30px"  width="30px" alt="" />  CSS</h1>
+                        <h1 style={{display:"flex",alignItems:"center"}}><img src={cssimg} height="25px"  width="25px" alt="" />  CSS</h1>
                         <span style={{display:"flex",alignItems:"center"}}>
                             <div style={{border:theme?"1px solid black":"1px solid white",borderRadius:"5px",overflow:"hidden"}}>
                                 <div></div>
@@ -123,7 +123,7 @@ const Skills=()=>{
                         </span>
                     </div>
                     <div id={style.js} >
-                        <h1 style={{display:"flex",alignItems:"center"}}><img src={jsimg} height="30px"  width="30px" alt="" />  JAVASCRIPT</h1>
+                        <h1 style={{display:"flex",alignItems:"center"}}><img src={jsimg} height="25px"  width="25px" alt="" />  JAVASCRIPT</h1>
                         <span style={{display:"flex",alignItems:"center"}}>
                             <div style={{border:theme?"1px solid black":"1px solid white",borderRadius:"5px",overflow:"hidden"}}>
                                 <div></div>
@@ -132,7 +132,7 @@ const Skills=()=>{
                         </span>
                     </div>
                     <div id={style.react} >
-                        <h1 style={{display:"flex",alignItems:"center"}}><img src={reactimg} height="30px"  width="30px" alt="" />  REACT.JS</h1>
+                        <h1 style={{display:"flex",alignItems:"center"}}><img src={reactimg} height="25px"  width="25px" alt="" />  REACT.JS</h1>
                         <span style={{display:"flex",alignItems:"center"}}>
                             <div style={{border:theme?"1px solid black":"1px solid white",borderRadius:"5px",overflow:"hidden"}}>
                                 <div></div>
@@ -141,7 +141,7 @@ const Skills=()=>{
                         </span>
                     </div>
                     <div id={style.node}  >
-                        <h1 style={{display:"flex",alignItems:"center"}}><img src={nodeimg} height="30px"  width="30px" alt="" />  NODE.JS</h1>
+                        <h1 style={{display:"flex",alignItems:"center"}}><img src={nodeimg} height="25px"  width="25px" alt="" />  NODE.JS</h1>
                         <span style={{display:"flex",alignItems:"center"}}>
                             <div style={{border:theme?"1px solid black":"1px solid white",borderRadius:"5px",overflow:"hidden"}}>
                                 <div></div>
@@ -150,7 +150,7 @@ const Skills=()=>{
                         </span>
                     </div>
                     <div id={style.mongodb} >
-                        <h1 style={{display:"flex",alignItems:"center"}}><img src={mongoimg} height="30px"  width="30px" alt="" />  MONGODB</h1>
+                        <h1 style={{display:"flex",alignItems:"center"}}><img src={mongoimg} height="25px"  width="25px" alt="" />  MONGODB</h1>
                         <span style={{display:"flex",alignItems:"center"}}>
                             <div style={{border:theme?"1px solid black":"1px solid white",borderRadius:"5px",overflow:"hidden"}}>
                                 <div></div>
@@ -159,7 +159,7 @@ const Skills=()=>{
                         </span>
                     </div>
                     <div id={style.sql} >
-                        <h1 style={{display:"flex",alignItems:"center"}}><img src={sqlimg} height="30px"  width="30px" alt="" />  SQL</h1>
+                        <h1 style={{display:"flex",alignItems:"center"}}><img src={sqlimg} height="25px"  width="25px" alt="" />  SQL</h1>
                         <span style={{display:"flex",alignItems:"center"}}>
                             <div style={{border:theme?"1px solid black":"1px solid white",borderRadius:"5px",overflow:"hidden"}}>
                                 <div></div>

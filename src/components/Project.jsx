@@ -39,7 +39,7 @@ const Project=()=>{
                     <div className={style.hovercontent} style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                         <h1>Employee Management</h1>
                         <h2>Mern project</h2>
-                        <h1>Explore more</h1>
+                        <h1>Explore this</h1>
                         <a href="https://github.com/Shanmugam070702/Employeemanagement" target="_blank" style={{textDecoration:"none",color:"none"}}><OpenInNewIcon sx={{fill:theme?"black":"white"}}/></a>
                         
                     </div>
@@ -52,7 +52,7 @@ const Project=()=>{
                     <div className={style.hovercontent} style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                         <h1>Spotify</h1>
                         <h2>UI/UX project</h2>
-                        <h1>Explore more</h1>
+                        <h1>Explore this</h1>
                         <a href="https://github.com/Shanmugam070702/Spotify" target="_blank" style={{textDecoration:"none",color:"none"}}><OpenInNewIcon sx={{fill:theme?"black":"white"}}/></a>
                         
                     </div>
@@ -65,7 +65,7 @@ const Project=()=>{
                     <div className={style.hovercontent} style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                         <h1>Netflix</h1>
                         <h2>UI/UX project</h2>
-                        <h1>Explore more</h1>
+                        <h1>Explore this</h1>
                         <a href="https://github.com/Shanmugam070702/Netflix" target="_blank" style={{textDecoration:"none",color:"none"}}><OpenInNewIcon sx={{fill:theme?"black":"white"}}/></a>
                         
                     </div>
@@ -78,7 +78,7 @@ const Project=()=>{
                     <div className={style.hovercontent} style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                         <h1>Discord</h1>
                         <h2>UI/UX project</h2>
-                        <h1>Explore more</h1>
+                        <h1>Explore this</h1>
                         <a href="https://github.com/Shanmugam070702/Discord" target="_blank" style={{textDecoration:"none",color:"none"}}><OpenInNewIcon sx={{fill:theme?"black":"white"}}/></a>
                         
                     </div>
@@ -91,7 +91,7 @@ const Project=()=>{
                     <div className={style.hovercontent} style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                         <h1>Swiggy</h1>
                         <h2>UI/UX project</h2>
-                        <h1>Explore more</h1>
+                        <h1>Explore this</h1>
                         <a href="https://github.com/Shanmugam070702/swiggy" target="_blank" style={{textDecoration:"none",color:"none"}}><OpenInNewIcon sx={{fill:theme?"black":"white"}}/></a>
                         
                     </div>
@@ -104,7 +104,7 @@ const Project=()=>{
                     <div className={style.hovercontent} style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                         <h1>Prime Video</h1>
                         <h2>UI/UX project</h2>
-                        <h1>Explore more</h1>
+                        <h1>Explore this</h1>
                         <a href="https://github.com/Shanmugam070702/Primevideo" target="_blank" style={{textDecoration:"none",color:"none"}}><OpenInNewIcon sx={{fill:theme?"black":"white"}}/></a>
                         
                     </div>
