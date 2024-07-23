@@ -7,7 +7,7 @@ import "aos/dist/aos.css"
 import { useEffect } from "react"
 import { useContext } from "react"
 import { Themevalue } from "../App"
-
+import image2 from "../components/assets/—Pngtree—coder clipart boy working with_11072679.png"
 
 
 
@@ -29,7 +29,7 @@ const About=()=>{
     return(
         <section id={style.about} style={{backgroundColor:theme?"white":"black",color:theme?"black":"white"}}>
             <div id={style.Aimgblock}>
-               <img className={style.img}  src={imag1} alt="" />
+               <img className={style.img}  src={image2} alt="" />
             </div>
             <div id={style.Aconblock}  data-aos="fade-right">
                 <h1 className={style.Atitle} >About <span style={{color:"aqua"}}>me</span></h1>

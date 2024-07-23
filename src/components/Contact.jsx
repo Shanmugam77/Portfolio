@@ -79,8 +79,8 @@ const Contact=()=>{
                     <h1 className={style.ctitle}>Contact <span style={{color:"aqua"}}>Me</span></h1>
                     <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center"}}><EmailIcon sx={{fill:"aqua"}}/><span style={{marginLeft:"5%"}}>Shanmugam070702@gmail.com</span></h1>
                     <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center"}}><PhoneIcon sx={{fill:"aqua"}}/><span style={{marginLeft:"5%"}}>9361813275</span></h1>
-                    <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center"}}><LinkedInIcon sx={{fill:"aqua"}}/><a href="https://www.linkedin.com/in/shanmugam-n-3a737328a" target="_blank" style={{marginLeft:"5%",color:"currentcolor"}}>linkedin.com/in/shanmugam-n-3a737328a</a></h1>
-                    <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center"}}><GitHubIcon sx={{fill:"aqua"}}/><a href="https://github.com/Shanmugam070702" target="_blank" style={{marginLeft:"5%",color:"currentcolor"}}>github.com/Shanmugam070702</a></h1>
+                    <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center"}}><LinkedInIcon sx={{fill:"aqua"}}/><a href="https://www.linkedin.com/in/shanmugam-n" target="_blank" style={{marginLeft:"5%",color:"currentcolor"}}>linkedin.com/in/shanmugam-n</a></h1>
+                    <h1 className={style.csubtitle} style={{display:"flex",alignItems:"center"}}><GitHubIcon sx={{fill:"aqua"}}/><a href="https://github.com/Shanmugam77" target="_blank" style={{marginLeft:"5%",color:"currentcolor"}}>github.com/Shanmugam77</a></h1>
                 
                 </div>
                 <form >
