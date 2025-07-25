@@ -95,6 +95,9 @@ html{
     animation-delay: calc(.2s);
     opacity: 0;
 }
+.pcmenu>li:hover{
+    cursor: pointer;
+}
 .pcmenu>li>a{
     /* color: white; */
     text-decoration: none;
